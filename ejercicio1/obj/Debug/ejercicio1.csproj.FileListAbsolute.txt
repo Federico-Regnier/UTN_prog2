@@ -1,0 +1,6 @@
+D:\FR\terceraClase\ejercicio1\bin\Debug\ejercicio1.exe.config
+D:\FR\terceraClase\ejercicio1\bin\Debug\ejercicio1.exe
+D:\FR\terceraClase\ejercicio1\bin\Debug\ejercicio1.pdb
+D:\FR\terceraClase\ejercicio1\obj\Debug\ejercicio1.csprojResolveAssemblyReference.cache
+D:\FR\terceraClase\ejercicio1\obj\Debug\ejercicio1.exe
+D:\FR\terceraClase\ejercicio1\obj\Debug\ejercicio1.pdb
