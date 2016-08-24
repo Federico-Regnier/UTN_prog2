@@ -16,7 +16,7 @@ namespace ejercicio1
         private int kilometrosRecorridos;
         public static int contadorDeObjetos;
         private static Random random;
-        
+        private int tiempoDemorado;
 
         public static bool CompararAuto(Auto auto1, Auto auto2)
         {
@@ -33,11 +33,27 @@ namespace ejercicio1
         public void VolverACero()
         {
             this.kilometrosRecorridos = 0;
+            this.tiempoDemorado = 0;
         }
 
         public void AgregarKilometros(int kilometros)
         {
             this.kilometrosRecorridos += kilometros;
+        }
+
+        public void AgregarTiempo(int tiempo)
+        {
+            this.tiempoDemorado += tiempo;
+        }
+
+        public int GetKms()
+        {
+            return this.kilometrosRecorridos;
+        }
+
+        public int GetTiempo()
+        {
+            return this.tiempoDemorado;
         }
 
         public Auto()

@@ -10,10 +10,7 @@ namespace ejercicio1
     {
         static void Main(string[] args)
         {
-            /**Rueda nuevaRueda;
-            nuevaRueda = new Rueda();
-            
-            eFabricante fabricante;
+            /*eFabricante fabricante;
 
             fabricante = eFabricante.Honda;
             Console.WriteLine(fabricante);
@@ -21,8 +18,15 @@ namespace ejercicio1
             Console.WriteLine(fabricante);
             Console.ReadKey();*/
 
+            /*Kilometro kilometros = new Kilometro(5);
+            Tiempo tiempo = new Tiempo(20);
             Carrera carrera = new Carrera();
-            carrera.MostrarCarrera();
+            carrera.CorrerCarrera(tiempo);
+            carrera.CorrerCarrera(kilometros);*/
+
+            Tiempo t1 = new Tiempo();
+            Tiempo result = t1 + 10;
+            Console.WriteLine(result.cantidad);
             Console.ReadKey();
 
         }
