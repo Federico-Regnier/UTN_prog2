@@ -10,23 +10,14 @@ namespace ejercicio1
     {
         static void Main(string[] args)
         {
-            /*eFabricante fabricante;
-
-            fabricante = eFabricante.Honda;
-            Console.WriteLine(fabricante);
-            fabricante = (eFabricante)1;
-            Console.WriteLine(fabricante);
-            Console.ReadKey();*/
-
-            /*Kilometro kilometros = new Kilometro(5);
-            Tiempo tiempo = new Tiempo(20);
+            Random random = new Random(); 
+            Kilometros kilometros = random.Next(1, 100);
+            Tiempo tiempo = random.Next(1, 100);
             Carrera carrera = new Carrera();
+            
             carrera.CorrerCarrera(tiempo);
-            carrera.CorrerCarrera(kilometros);*/
-
-            Tiempo t1 = new Tiempo();
-            Tiempo result = t1 + 10;
-            Console.WriteLine(result.cantidad);
+            carrera.CorrerCarrera(kilometros);
+            
             Console.ReadKey();
 
         }

@@ -16,10 +16,10 @@ namespace ejercicio1
         public Auto auto6;
         public Random random;
 
-        public void porTiempo(int minutos)
+        
+        public void CorrerCarrera(Kilometros kilometros)
         {
-            int max;
-            string ganador;
+            Auto ganador;
 
             this.auto1.VolverACero();
             this.auto2.VolverACero();
@@ -28,63 +28,7 @@ namespace ejercicio1
             this.auto5.VolverACero();
             this.auto6.VolverACero();
 
-            for (int i = 0; i < minutos; i++)
-            {
-                this.auto1.AgregarKilometros(random.Next(10, 100));
-                this.auto2.AgregarKilometros(random.Next(10, 100));
-                this.auto3.AgregarKilometros(random.Next(10, 100));
-                this.auto4.AgregarKilometros(random.Next(10, 100));
-                this.auto5.AgregarKilometros(random.Next(10, 100));
-                this.auto6.AgregarKilometros(random.Next(10, 100));
-            }
-
-            max = auto1.GetKms();
-            ganador = "auto1";
-
-            if (max < auto2.GetKms())
-            {
-                max = auto2.GetKms();
-                ganador = "auto2";
-            }
-
-            if (max < auto3.GetKms())
-            {
-                max = auto3.GetKms();
-                ganador = "auto3";
-            }
-            if(max < auto4.GetKms())
-            {
-                max = auto4.GetKms();
-                ganador = "auto4";
-            }
-            if(max < auto5.GetKms())
-            {
-                max = auto5.GetKms();
-                ganador = "auto5";
-            }
-            if(max < auto6.GetKms())
-            {
-                max = auto6.GetKms();
-                ganador = "auto6";
-            }
-
-            Console.WriteLine("El ganador es: " + ganador);
-            
-        }
-
-        public void CorrerCarrera(Kilometro kilometros)
-        {
-            int min;
-            string ganador;
-
-            this.auto1.VolverACero();
-            this.auto2.VolverACero();
-            this.auto3.VolverACero();
-            this.auto4.VolverACero();
-            this.auto5.VolverACero();
-            this.auto6.VolverACero();
-
-            for (int i = 0; i < kilometros.cantidad; i++)
+            for (int i = 0; i < kilometros; i++)
             {
                 this.auto1.AgregarTiempo(random.Next(10, 100));
                 this.auto2.AgregarTiempo(random.Next(10, 100));
@@ -94,43 +38,26 @@ namespace ejercicio1
                 this.auto6.AgregarTiempo(random.Next(10, 100));
             }
 
-            min = auto1.GetTiempo();
-            ganador = "Auto 1";
+            ganador = auto1;
 
-            if (min > auto2.GetTiempo())
-            {
-                min = auto2.GetTiempo();
-                ganador = "Auto 2";
-            }
-
-            if (min > auto3.GetTiempo())
-            {
-                min = auto3.GetTiempo();
-                ganador = "Auto 3";
-            }
-            if (min > auto4.GetTiempo())
-            {
-                min = auto4.GetTiempo();
-                ganador = "Auto 4";
-            }
-            if (min > auto5.GetTiempo())
-            {
-                min = auto5.GetTiempo();
-                ganador = "Auto 5";
-            }
-            if (min > auto6.GetTiempo())
-            {
-                min = auto6.GetTiempo();
-                ganador = "Auto 6";
-            }
-
-            Console.WriteLine("El ganador es: " + ganador);
+            if (ganador.GetTiempo() > auto2.GetTiempo())
+                ganador = auto2;
+            if (ganador.GetTiempo() > auto3.GetTiempo())
+                ganador = auto3;
+            if (ganador.GetTiempo() > auto4.GetTiempo())
+                ganador = auto4;
+            if (ganador.GetTiempo() > auto5.GetTiempo())
+                ganador = auto5;
+            if (ganador.GetTiempo() > auto6.GetTiempo())
+                ganador = auto6;
+            
+            Console.Write("El ganador es: ");
+            ganador.MostrarAuto();
         }
 
         public void CorrerCarrera(Tiempo tiempo)
         {
-            int max;
-            string ganador;
+            Auto ganador;
 
             this.auto1.VolverACero();
             this.auto2.VolverACero();
@@ -139,7 +66,7 @@ namespace ejercicio1
             this.auto5.VolverACero();
             this.auto6.VolverACero();
 
-            for (int i = 0; i < tiempo.cantidad; i++)
+            for (int i = 0; i < tiempo; i++)
             {
                 this.auto1.AgregarKilometros(random.Next(10, 100));
                 this.auto2.AgregarKilometros(random.Next(10, 100));
@@ -149,37 +76,21 @@ namespace ejercicio1
                 this.auto6.AgregarKilometros(random.Next(10, 100));
             }
 
-            max = auto1.GetKms();
-            ganador = "auto1";
+            ganador = auto1;
 
-            if (max < auto2.GetKms())
-            {
-                max = auto2.GetKms();
-                ganador = "auto2";
-            }
+            if (ganador.GetKms() < auto2.GetKms())
+                ganador = auto2;
+            if (ganador.GetKms() < auto3.GetKms())
+                ganador = auto3;
+            if (ganador.GetKms() < auto4.GetKms())
+                ganador = auto4;
+            if (ganador.GetKms() < auto5.GetKms())
+                ganador = auto5;
+            if (ganador.GetKms() < auto6.GetKms())
+                ganador = auto6;
 
-            if (max < auto3.GetKms())
-            {
-                max = auto3.GetKms();
-                ganador = "auto3";
-            }
-            if (max < auto4.GetKms())
-            {
-                max = auto4.GetKms();
-                ganador = "auto4";
-            }
-            if (max < auto5.GetKms())
-            {
-                max = auto5.GetKms();
-                ganador = "auto5";
-            }
-            if (max < auto6.GetKms())
-            {
-                max = auto6.GetKms();
-                ganador = "auto6";
-            }
-
-            Console.WriteLine("El ganador es: " + ganador);
+            Console.Write("El ganador es: ");
+            ganador.MostrarAuto();
         }
 
         public void MostrarCarrera()

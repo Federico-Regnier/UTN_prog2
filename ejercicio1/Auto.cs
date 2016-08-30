@@ -8,26 +8,26 @@ namespace ejercicio1
 {
     public class Auto
     {
-        private eFabricante fabricante;
+        private eFabricante _fabricante;
         public Rueda ruedaDI;
         public Rueda ruedaDD;
         public Rueda ruedaTI;
         public Rueda ruedaTD;
-        private int kilometrosRecorridos;
         public static int contadorDeObjetos;
-        private static Random random;
-        private int tiempoDemorado;
-
+        private static Random _random;
+        private Tiempo tiempoDemorado;
+        private Kilometros kilometrosRecorridos;
+        
         public static bool CompararAuto(Auto auto1, Auto auto2)
         {
-            if (auto1.fabricante == auto2.fabricante)
+            if (auto1._fabricante == auto2._fabricante)
                 return true;
             return false;
         }
 
         public void MostrarAuto()
         {
-            Console.WriteLine("El fabricante es: " + this.fabricante);
+            Console.WriteLine("Fabricante: " + this._fabricante);
         }
 
         public void VolverACero()
@@ -46,20 +46,30 @@ namespace ejercicio1
             this.tiempoDemorado += tiempo;
         }
 
-        public int GetKms()
+        public Kilometros GetKms()
         {
             return this.kilometrosRecorridos;
         }
 
-        public int GetTiempo()
+        public Tiempo GetTiempo()
         {
             return this.tiempoDemorado;
         }
 
+        public void Agregar(Tiempo tiempo)
+        {
+            this.tiempoDemorado = this.tiempoDemorado + tiempo;
+        }
+        public void Agregar(Kilometros kms)
+        {
+            this.kilometrosRecorridos = this.kilometrosRecorridos + kms;
+        }
         public Auto()
         {
 
-            this.fabricante = (eFabricante)Auto.random.Next(0, 3);
+            this._fabricante = (eFabricante)Auto._random.Next(0, 3);
+            this.kilometrosRecorridos = 0;
+            this.tiempoDemorado = 0;
             this.ruedaDD = new Rueda();
             this.ruedaDI = new Rueda();
             this.ruedaTD = new Rueda();
@@ -70,7 +80,7 @@ namespace ejercicio1
         static Auto()
         {
             Auto.contadorDeObjetos = 0;
-            Auto.random = new Random();
+            Auto._random = new Random();
         }
     }
 }
