@@ -76,7 +76,7 @@ namespace ejercicio1
 
         public static bool operator >(Kilometros km1, Kilometros km2)
         {
-            return !(km1 == km2 || km1 < km2);
+            return (km1._cantidad > km2._cantidad);
         }
 
         public static bool operator <(Kilometros km1, int numero)
@@ -86,7 +86,7 @@ namespace ejercicio1
 
         public static bool operator >(Kilometros km1, int numero)
         {
-            return !(km1 == numero || km1 < numero);
+            return (km1._cantidad > numero);
         }
     }
 

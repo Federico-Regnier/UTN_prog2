@@ -27,7 +27,7 @@ namespace ejercicio1
 
         public void MostrarAuto()
         {
-            Console.WriteLine("Fabricante: " + this._fabricante);
+            Console.WriteLine(this._fabricante);
         }
 
         public void VolverACero()
@@ -36,6 +36,7 @@ namespace ejercicio1
             this.tiempoDemorado = 0;
         }
 
+        /* Deprecated por sobreacarga del metodo agregar
         public void AgregarKilometros(int kilometros)
         {
             this.kilometrosRecorridos += kilometros;
@@ -44,7 +45,7 @@ namespace ejercicio1
         public void AgregarTiempo(int tiempo)
         {
             this.tiempoDemorado += tiempo;
-        }
+        }*/
 
         public Kilometros GetKms()
         {

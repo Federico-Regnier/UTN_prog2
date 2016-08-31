@@ -30,12 +30,12 @@ namespace ejercicio1
 
             for (int i = 0; i < kilometros; i++)
             {
-                this.auto1.AgregarTiempo(random.Next(10, 100));
-                this.auto2.AgregarTiempo(random.Next(10, 100));
-                this.auto3.AgregarTiempo(random.Next(10, 100));
-                this.auto4.AgregarTiempo(random.Next(10, 100));
-                this.auto5.AgregarTiempo(random.Next(10, 100));
-                this.auto6.AgregarTiempo(random.Next(10, 100));
+                this.auto1.Agregar((Tiempo)random.Next(10, 100));
+                this.auto2.Agregar((Tiempo)random.Next(10, 100));
+                this.auto3.Agregar((Tiempo)random.Next(10, 100));
+                this.auto4.Agregar((Tiempo)random.Next(10, 100));
+                this.auto5.Agregar((Tiempo)random.Next(10, 100));
+                this.auto6.Agregar((Tiempo)random.Next(10, 100));
             }
 
             ganador = auto1;
@@ -68,12 +68,12 @@ namespace ejercicio1
 
             for (int i = 0; i < tiempo; i++)
             {
-                this.auto1.AgregarKilometros(random.Next(10, 100));
-                this.auto2.AgregarKilometros(random.Next(10, 100));
-                this.auto3.AgregarKilometros(random.Next(10, 100));
-                this.auto4.AgregarKilometros(random.Next(10, 100));
-                this.auto5.AgregarKilometros(random.Next(10, 100));
-                this.auto6.AgregarKilometros(random.Next(10, 100));
+                this.auto1.Agregar((Kilometros)random.Next(10, 100));
+                this.auto2.Agregar((Kilometros)random.Next(10, 100));
+                this.auto3.Agregar((Kilometros)random.Next(10, 100));
+                this.auto4.Agregar((Kilometros)random.Next(10, 100));
+                this.auto5.Agregar((Kilometros)random.Next(10, 100));
+                this.auto6.Agregar((Kilometros)random.Next(10, 100));
             }
 
             ganador = auto1;

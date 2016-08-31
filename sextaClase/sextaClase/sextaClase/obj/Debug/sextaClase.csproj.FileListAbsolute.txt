@@ -1,0 +1,9 @@
+D:\FR\sextaClase\sextaClase\sextaClase\bin\Debug\sextaClase.exe.config
+D:\FR\sextaClase\sextaClase\sextaClase\bin\Debug\sextaClase.exe
+D:\FR\sextaClase\sextaClase\sextaClase\bin\Debug\sextaClase.pdb
+D:\FR\sextaClase\sextaClase\sextaClase\obj\Debug\sextaClase.csprojResolveAssemblyReference.cache
+D:\FR\sextaClase\sextaClase\sextaClase\obj\Debug\sextaClase.Properties.Resources.resources
+D:\FR\sextaClase\sextaClase\sextaClase\obj\Debug\sextaClase.csproj.GenerateResource.Cache
+D:\FR\sextaClase\sextaClase\sextaClase\obj\Debug\sextaClase.exe
+D:\FR\sextaClase\sextaClase\sextaClase\obj\Debug\sextaClase.pdb
+D:\FR\sextaClase\sextaClase\sextaClase\obj\Debug\sextaClase.Form1.resources

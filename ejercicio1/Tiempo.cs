@@ -82,7 +82,7 @@ namespace ejercicio1
 
         public static bool operator >(Tiempo tiempo1, Tiempo tiempo2)
         {
-            return !(tiempo1 == tiempo2 || tiempo1 < tiempo2);
+            return (tiempo1._cantidad > tiempo2);
         }
 
         public static bool operator <(Tiempo tiempo1, int numero)
@@ -92,7 +92,7 @@ namespace ejercicio1
 
         public static bool operator >(Tiempo tiempo1, int numero)
         {
-            return !(tiempo1 == numero || tiempo1 < numero);
+            return (tiempo1._cantidad > numero);
         }
     }
 }

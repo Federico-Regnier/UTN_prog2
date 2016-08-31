@@ -1,0 +1,8 @@
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\bin\Debug\ferreteFacturacion.exe.config
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\bin\Debug\ferreteFacturacion.exe
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\bin\Debug\ferreteFacturacion.pdb
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\obj\Debug\ferreteFacturacion.Form1.resources
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\obj\Debug\ferreteFacturacion.Properties.Resources.resources
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\obj\Debug\ferreteFacturacion.csproj.GenerateResource.Cache
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\obj\Debug\ferreteFacturacion.exe
+D:\FR\sextaClase\sextaClase\ferreteFacturacion\obj\Debug\ferreteFacturacion.pdb
