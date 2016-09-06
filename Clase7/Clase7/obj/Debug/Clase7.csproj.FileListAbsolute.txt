@@ -1,0 +1,6 @@
+D:\FR\Clase7\Clase7\bin\Debug\Clase7.exe.config
+D:\FR\Clase7\Clase7\bin\Debug\Clase7.exe
+D:\FR\Clase7\Clase7\bin\Debug\Clase7.pdb
+D:\FR\Clase7\Clase7\obj\Debug\Clase7.csprojResolveAssemblyReference.cache
+D:\FR\Clase7\Clase7\obj\Debug\Clase7.exe
+D:\FR\Clase7\Clase7\obj\Debug\Clase7.pdb
