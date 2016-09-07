@@ -13,3 +13,6 @@ D:\FR\Clase3\ejercicio1\obj\Debug\ejercicio1.csprojResolveAssemblyReference.cach
 D:\FR\UTN\ejercicio1\bin\Debug\ejercicio1.exe.config
 D:\FR\UTN\ejercicio1\obj\Debug\ejercicio1.exe
 D:\FR\UTN\ejercicio1\obj\Debug\ejercicio1.pdb
+D:\FR\UTN\ejercicio1\bin\Debug\ejercicio1.exe
+D:\FR\UTN\ejercicio1\bin\Debug\ejercicio1.pdb
+D:\FR\UTN\ejercicio1\obj\Debug\ejercicio1.csprojResolveAssemblyReference.cache

@@ -8,12 +8,15 @@ namespace ejercicio1
 {
     public class Carrera
     {
+        /* Deprecated por coleccion
         public Auto auto1;
         public Auto auto2;
         public Auto auto3;
         public Auto auto4;
         public Auto auto5;
         public Auto auto6;
+         */
+        public List<Auto> listaDeAutos;
         public Random random;
 
         
@@ -21,25 +24,32 @@ namespace ejercicio1
         {
             Auto ganador;
 
-            this.auto1.VolverACero();
-            this.auto2.VolverACero();
-            this.auto3.VolverACero();
-            this.auto4.VolverACero();
-            this.auto5.VolverACero();
-            this.auto6.VolverACero();
+            foreach (Auto auto in this.listaDeAutos)
+            {
+                auto.VolverACero();
+            }
 
             for (int i = 0; i < kilometros; i++)
             {
-                this.auto1.Agregar((Tiempo)random.Next(10, 100));
-                this.auto2.Agregar((Tiempo)random.Next(10, 100));
-                this.auto3.Agregar((Tiempo)random.Next(10, 100));
-                this.auto4.Agregar((Tiempo)random.Next(10, 100));
-                this.auto5.Agregar((Tiempo)random.Next(10, 100));
-                this.auto6.Agregar((Tiempo)random.Next(10, 100));
+                foreach (Auto auto in this.listaDeAutos)
+                {
+                    auto.Agregar((Tiempo)random.Next(10, 100));
+
+                }
             }
 
-            ganador = auto1;
+            
 
+            ganador = this.listaDeAutos[0];
+
+            for (int elemento = 1; elemento < this.listaDeAutos.Count; elemento++)
+            {
+                if (ganador.GetTiempo() > this.listaDeAutos[elemento].GetTiempo())
+                    ganador = this.listaDeAutos[elemento];
+            }
+            
+            /*DEPRECATED por colecciones
+            ganador = auto1;
             if (ganador.GetTiempo() > auto2.GetTiempo())
                 ganador = auto2;
             if (ganador.GetTiempo() > auto3.GetTiempo())
@@ -49,35 +59,37 @@ namespace ejercicio1
             if (ganador.GetTiempo() > auto5.GetTiempo())
                 ganador = auto5;
             if (ganador.GetTiempo() > auto6.GetTiempo())
-                ganador = auto6;
-            
-            Console.Write("El ganador es: ");
-            ganador.MostrarAuto();
+                ganador = auto6;*/
+
+            Console.WriteLine("El ganador es: {0} con un tiempo de {1}", ganador.MostrarAuto(), (int)ganador.GetTiempo());
         }
 
         public void CorrerCarrera(Tiempo tiempo)
         {
             Auto ganador;
 
-            this.auto1.VolverACero();
-            this.auto2.VolverACero();
-            this.auto3.VolverACero();
-            this.auto4.VolverACero();
-            this.auto5.VolverACero();
-            this.auto6.VolverACero();
-
+            foreach (Auto auto in this.listaDeAutos)
+            {
+                auto.VolverACero();
+            }
+            
             for (int i = 0; i < tiempo; i++)
             {
-                this.auto1.Agregar((Kilometros)random.Next(10, 100));
-                this.auto2.Agregar((Kilometros)random.Next(10, 100));
-                this.auto3.Agregar((Kilometros)random.Next(10, 100));
-                this.auto4.Agregar((Kilometros)random.Next(10, 100));
-                this.auto5.Agregar((Kilometros)random.Next(10, 100));
-                this.auto6.Agregar((Kilometros)random.Next(10, 100));
+                foreach (Auto auto in this.listaDeAutos)
+                {
+                    auto.Agregar((Kilometros)random.Next(10, 100));
+                }    
             }
-
+            
+            ganador = this.listaDeAutos[0];
+            for (int elemento = 1; elemento < this.listaDeAutos.Count; elemento++)
+            {
+                if (ganador.GetKms() < this.listaDeAutos[elemento].GetKms())
+                    ganador = this.listaDeAutos[elemento];
+            }
+            
+            /*DEPRECATED por colecciones
             ganador = auto1;
-
             if (ganador.GetKms() < auto2.GetKms())
                 ganador = auto2;
             if (ganador.GetKms() < auto3.GetKms())
@@ -87,31 +99,64 @@ namespace ejercicio1
             if (ganador.GetKms() < auto5.GetKms())
                 ganador = auto5;
             if (ganador.GetKms() < auto6.GetKms())
-                ganador = auto6;
+                ganador = auto6;*/
 
-            Console.Write("El ganador es: ");
-            ganador.MostrarAuto();
+            Console.WriteLine("El ganador es: {0} con {1}kms recorridos", ganador.MostrarAuto(), (int)ganador.GetKms());
+            
         }
-
-        public void MostrarCarrera()
+        
+        public string MostrarCarrera()
         {
+            /* Deprecated por colecciones
             this.auto1.MostrarAuto();
             this.auto2.MostrarAuto();
             this.auto3.MostrarAuto();
             this.auto4.MostrarAuto();
             this.auto5.MostrarAuto();
             this.auto6.MostrarAuto();
+             */
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Carrera");
+            foreach (Auto auto in this.listaDeAutos)
+            {
+                sb.AppendLine(auto.retornarString());
+            }
+
+            return sb.ToString();
         }
+
+        #region Constructores
 
         public Carrera()
         {
+            /* Deprecated por colecciones
             this.auto1 = new Auto();
             this.auto2 = new Auto();
             this.auto3 = new Auto();
             this.auto4 = new Auto();
             this.auto5 = new Auto();
             this.auto6 = new Auto();
+             */
+            this.listaDeAutos = new List<Auto>();
             this.random = new Random();
         }
+
+        #endregion
+
+        #region Colecciones
+
+        private bool AgregarAuto(Auto auto)
+        {
+            this.listaDeAutos.Add(auto);
+            return true;
+        }
+
+        public static Carrera operator +(Carrera carrera, Auto auto)
+        {
+            carrera.AgregarAuto(auto);
+            return carrera;
+        }
+
+        #endregion
     }
 }

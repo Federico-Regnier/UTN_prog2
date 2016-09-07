@@ -25,9 +25,9 @@ namespace ejercicio1
             return false;
         }
 
-        public void MostrarAuto()
+        public string MostrarAuto()
         {
-            Console.WriteLine(this._fabricante);
+            return this._fabricante.ToString();
         }
 
         public void VolverACero()
@@ -61,10 +61,23 @@ namespace ejercicio1
         {
             this.tiempoDemorado = this.tiempoDemorado + tiempo;
         }
+
         public void Agregar(Kilometros kms)
         {
             this.kilometrosRecorridos = this.kilometrosRecorridos + kms;
         }
+
+        public string retornarString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Fabricante: " + this._fabricante);
+            sb.AppendLine("Kilometros: " + (int)this.kilometrosRecorridos);
+            sb.AppendLine("Tiempo: " + (int)this.tiempoDemorado);
+
+            return sb.ToString();
+        }
+
+        #region Constructores
         public Auto()
         {
 
@@ -83,5 +96,7 @@ namespace ejercicio1
             Auto.contadorDeObjetos = 0;
             Auto._random = new Random();
         }
+
+        #endregion
     }
 }
