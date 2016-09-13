@@ -18,9 +18,11 @@ namespace ejercicio1
          */
         public List<Auto> listaDeAutos;
         public Random random;
+        public string nombre;
+        public string lugar;
+        public string fecha;
 
-        
-        public void CorrerCarrera(Kilometros kilometros)
+        public string CorrerCarrera(Kilometros kilometros)
         {
             Auto ganador;
 
@@ -37,8 +39,6 @@ namespace ejercicio1
 
                 }
             }
-
-            
 
             ganador = this.listaDeAutos[0];
 
@@ -61,10 +61,12 @@ namespace ejercicio1
             if (ganador.GetTiempo() > auto6.GetTiempo())
                 ganador = auto6;*/
 
-            Console.WriteLine("El ganador es: {0} con un tiempo de {1}", ganador.MostrarAuto(), (int)ganador.GetTiempo());
+            //Console.WriteLine("El ganador es: {0} con un tiempo de {1}", ganador.MostrarAuto(), (int)ganador.GetTiempo());
+
+            return ganador.retornarString();
         }
 
-        public void CorrerCarrera(Tiempo tiempo)
+        public string CorrerCarrera(Tiempo tiempo)
         {
             Auto ganador;
 
@@ -101,8 +103,9 @@ namespace ejercicio1
             if (ganador.GetKms() < auto6.GetKms())
                 ganador = auto6;*/
 
-            Console.WriteLine("El ganador es: {0} con {1}kms recorridos", ganador.MostrarAuto(), (int)ganador.GetKms());
-            
+            //Console.WriteLine("El ganador es: {0} con {1}kms recorridos", ganador.MostrarAuto(), (int)ganador.GetKms());
+
+            return ganador.retornarString();
         }
         
         public string MostrarCarrera()
@@ -139,6 +142,14 @@ namespace ejercicio1
              */
             this.listaDeAutos = new List<Auto>();
             this.random = new Random();
+            
+        }
+
+        public Carrera(string nombre, string lugar, string fecha):this()
+        {
+            this.nombre = nombre;
+            this.lugar = lugar;
+            this.fecha = fecha;
         }
 
         #endregion
