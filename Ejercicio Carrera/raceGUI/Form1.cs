@@ -28,21 +28,23 @@ namespace ejercicio2UI
             this.cmbFabricante.SelectedIndex = 0;
             this.cmbFabricante.DropDownStyle = ComboBoxStyle.DropDownList;
 
+            // Carga el comboBox Tipo de Carrera
             this.cmbTipoCarrera.Items.Add("Por tiempo");
             this.cmbTipoCarrera.Items.Add("Por kilometros");
             this.cmbFabricante.SelectedIndex = 0;
             this.cmbFabricante.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            // Deshabilito los demas grupos
+            // Deshabilito los grupos que no son Carrera
             this.gpbAutos.Enabled = false;
             this.gpbListaAutos.Enabled = false;
             this.gpbResultado.Enabled = false;
             this.cmbTipoCarrera.SelectedIndex = 0;
 
             // Datos Testing
-            this.txtNombre.SelectedText = "Carrera";
-            this.txtLugar.SelectedText = "Avellaneda";
-            this.txtFecha.SelectedText = "13/09/16";
+            this.txtNombre.Text = "Carrera";
+            this.txtLugar.Text = "Avellaneda";
+            this.txtFecha.Text = "13/09/16";
+            this.txtPiloto.Text = "NN";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,9 +52,13 @@ namespace ejercicio2UI
             this.miCarrera = new Carrera(this.txtNombre.Text, this.txtLugar.Text, 
                                     this.txtFecha.Text);
 
+            // Deshabilita el Crear carrera y habilita el agregado de autos
             this.gpbCarrera.Enabled = false;
             this.gpbAutos.Enabled = true;
+            this.txtResultado.Clear();
+            this.lsbListadoAutos.Items.Clear();
             this.gpbListaAutos.Enabled = true;
+            this.lblGanador.Text = "Ganador";
         }
 
         private void btnAgregarAuto_Click(object sender, EventArgs e)
@@ -61,7 +67,10 @@ namespace ejercicio2UI
             this.miCarrera = this.miCarrera + miAuto;
             this.txtPiloto.Clear();
             this.listadoAutos();
+
+            // Habilito el groupBox Resultado y el boton Correr Carrera
             this.gpbResultado.Enabled = true;
+            this.btnCorrerCarrera.Enabled = true;
         }
 
         private void listadoAutos() 
@@ -76,16 +85,37 @@ namespace ejercicio2UI
         private void btnCorrerCarrera_Click(object sender, EventArgs e)
         {
             this.txtResultado.Clear();
+            StringBuilder info = new StringBuilder();
+
+            info.AppendLine(this.miCarrera.nombre + " " + this.miCarrera.lugar + " " + this.miCarrera.fecha);
+            this.lblGanador.Text = info.ToString();
+
+            info.Clear();
+            info.AppendLine("\t" + " Ganador");
+
             if (this.cmbTipoCarrera.Text == "Por tiempo")
-            {
-                this.txtResultado.Text = this.miCarrera.CorrerCarrera((Tiempo)5);
-            }
+                info.AppendLine(this.miCarrera.CorrerCarrera((Tiempo) this.nmrCantidadCarrera.Value));
+            else
+                info.AppendLine(this.miCarrera.CorrerCarrera((Kilometros) this.nmrCantidadCarrera.Value));
+            
 
-            if (this.cmbTipoCarrera.Text == "Por kilometros")
-            {
-                this.txtResultado.Text = this.miCarrera.CorrerCarrera((Kilometros)5);
-            }
+            this.txtResultado.Text = info.ToString();
+            
+            // Deshabilito el boton correrCarrera y agregar autos
+            this.btnCorrerCarrera.Enabled = false;
+            this.limpiarFormulario();
+            this.gpbAutos.Enabled = false;
+            this.gpbCarrera.Enabled = true;
+            
+            
+        }
 
+        // Limpia los textBox del formulario (salvo ListaAutos y Resultado)
+        private void limpiarFormulario()
+        {
+            this.txtNombre.Clear();
+            this.txtLugar.Clear();
+            this.txtFecha.Clear();
         }
     }
 }

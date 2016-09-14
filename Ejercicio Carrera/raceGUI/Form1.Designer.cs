@@ -43,18 +43,18 @@
             this.txtPiloto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gpbResultado = new System.Windows.Forms.GroupBox();
+            this.nmrCantidadCarrera = new System.Windows.Forms.NumericUpDown();
+            this.lblGanador = new System.Windows.Forms.Label();
+            this.txtResultado = new System.Windows.Forms.TextBox();
+            this.btnCorrerCarrera = new System.Windows.Forms.Button();
+            this.cmbTipoCarrera = new System.Windows.Forms.ComboBox();
             this.gpbListaAutos = new System.Windows.Forms.GroupBox();
             this.lsbListadoAutos = new System.Windows.Forms.ListBox();
-            this.cmbTipoCarrera = new System.Windows.Forms.ComboBox();
-            this.btnCorrerCarrera = new System.Windows.Forms.Button();
-            this.txtResultado = new System.Windows.Forms.TextBox();
-            this.lblGanador = new System.Windows.Forms.Label();
-            this.nmrCantidadCarrera = new System.Windows.Forms.NumericUpDown();
             this.gpbCarrera.SuspendLayout();
             this.gpbAutos.SuspendLayout();
             this.gpbResultado.SuspendLayout();
-            this.gpbListaAutos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrCantidadCarrera)).BeginInit();
+            this.gpbListaAutos.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCarrera
@@ -140,7 +140,7 @@
             this.gpbAutos.Controls.Add(this.label1);
             this.gpbAutos.Location = new System.Drawing.Point(12, 100);
             this.gpbAutos.Name = "gpbAutos";
-            this.gpbAutos.Size = new System.Drawing.Size(300, 176);
+            this.gpbAutos.Size = new System.Drawing.Size(300, 158);
             this.gpbAutos.TabIndex = 2;
             this.gpbAutos.TabStop = false;
             this.gpbAutos.Text = "Autos";
@@ -149,14 +149,14 @@
             // 
             this.cmbFabricante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFabricante.FormattingEnabled = true;
-            this.cmbFabricante.Location = new System.Drawing.Point(6, 44);
+            this.cmbFabricante.Location = new System.Drawing.Point(6, 37);
             this.cmbFabricante.Name = "cmbFabricante";
             this.cmbFabricante.Size = new System.Drawing.Size(148, 21);
             this.cmbFabricante.TabIndex = 5;
             // 
             // btnAgregarAuto
             // 
-            this.btnAgregarAuto.Location = new System.Drawing.Point(6, 127);
+            this.btnAgregarAuto.Location = new System.Drawing.Point(6, 103);
             this.btnAgregarAuto.Name = "btnAgregarAuto";
             this.btnAgregarAuto.Size = new System.Drawing.Size(130, 32);
             this.btnAgregarAuto.TabIndex = 4;
@@ -167,7 +167,7 @@
             // lblPiloto
             // 
             this.lblPiloto.AutoSize = true;
-            this.lblPiloto.Location = new System.Drawing.Point(6, 73);
+            this.lblPiloto.Location = new System.Drawing.Point(6, 61);
             this.lblPiloto.Name = "lblPiloto";
             this.lblPiloto.Size = new System.Drawing.Size(33, 13);
             this.lblPiloto.TabIndex = 3;
@@ -175,7 +175,7 @@
             // 
             // txtPiloto
             // 
-            this.txtPiloto.Location = new System.Drawing.Point(6, 89);
+            this.txtPiloto.Location = new System.Drawing.Point(6, 77);
             this.txtPiloto.Name = "txtPiloto";
             this.txtPiloto.Size = new System.Drawing.Size(149, 20);
             this.txtPiloto.TabIndex = 2;
@@ -183,7 +183,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Location = new System.Drawing.Point(6, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 1;
@@ -196,65 +196,12 @@
             this.gpbResultado.Controls.Add(this.txtResultado);
             this.gpbResultado.Controls.Add(this.btnCorrerCarrera);
             this.gpbResultado.Controls.Add(this.cmbTipoCarrera);
-            this.gpbResultado.Location = new System.Drawing.Point(12, 282);
+            this.gpbResultado.Location = new System.Drawing.Point(12, 264);
             this.gpbResultado.Name = "gpbResultado";
-            this.gpbResultado.Size = new System.Drawing.Size(300, 177);
+            this.gpbResultado.Size = new System.Drawing.Size(300, 195);
             this.gpbResultado.TabIndex = 3;
             this.gpbResultado.TabStop = false;
             this.gpbResultado.Text = "Resultado";
-            // 
-            // gpbListaAutos
-            // 
-            this.gpbListaAutos.Controls.Add(this.lsbListadoAutos);
-            this.gpbListaAutos.Location = new System.Drawing.Point(318, 100);
-            this.gpbListaAutos.Name = "gpbListaAutos";
-            this.gpbListaAutos.Size = new System.Drawing.Size(289, 359);
-            this.gpbListaAutos.TabIndex = 4;
-            this.gpbListaAutos.TabStop = false;
-            this.gpbListaAutos.Text = "Lista de Autos";
-            // 
-            // lsbListadoAutos
-            // 
-            this.lsbListadoAutos.FormattingEnabled = true;
-            this.lsbListadoAutos.Location = new System.Drawing.Point(6, 21);
-            this.lsbListadoAutos.Name = "lsbListadoAutos";
-            this.lsbListadoAutos.Size = new System.Drawing.Size(275, 316);
-            this.lsbListadoAutos.TabIndex = 0;
-            // 
-            // cmbTipoCarrera
-            // 
-            this.cmbTipoCarrera.FormattingEnabled = true;
-            this.cmbTipoCarrera.Location = new System.Drawing.Point(6, 44);
-            this.cmbTipoCarrera.Name = "cmbTipoCarrera";
-            this.cmbTipoCarrera.Size = new System.Drawing.Size(155, 21);
-            this.cmbTipoCarrera.TabIndex = 0;
-            // 
-            // btnCorrerCarrera
-            // 
-            this.btnCorrerCarrera.Location = new System.Drawing.Point(169, 18);
-            this.btnCorrerCarrera.Name = "btnCorrerCarrera";
-            this.btnCorrerCarrera.Size = new System.Drawing.Size(125, 47);
-            this.btnCorrerCarrera.TabIndex = 1;
-            this.btnCorrerCarrera.Text = "Correr Carrera";
-            this.btnCorrerCarrera.UseVisualStyleBackColor = true;
-            this.btnCorrerCarrera.Click += new System.EventHandler(this.btnCorrerCarrera_Click);
-            // 
-            // txtResultado
-            // 
-            this.txtResultado.Location = new System.Drawing.Point(6, 88);
-            this.txtResultado.Multiline = true;
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(155, 83);
-            this.txtResultado.TabIndex = 2;
-            // 
-            // lblGanador
-            // 
-            this.lblGanador.AutoSize = true;
-            this.lblGanador.Location = new System.Drawing.Point(6, 72);
-            this.lblGanador.Name = "lblGanador";
-            this.lblGanador.Size = new System.Drawing.Size(48, 13);
-            this.lblGanador.TabIndex = 4;
-            this.lblGanador.Text = "Ganador";
             // 
             // nmrCantidadCarrera
             // 
@@ -278,6 +225,59 @@
             0,
             0});
             // 
+            // lblGanador
+            // 
+            this.lblGanador.AutoSize = true;
+            this.lblGanador.Location = new System.Drawing.Point(6, 70);
+            this.lblGanador.Name = "lblGanador";
+            this.lblGanador.Size = new System.Drawing.Size(48, 13);
+            this.lblGanador.TabIndex = 4;
+            this.lblGanador.Text = "Ganador";
+            // 
+            // txtResultado
+            // 
+            this.txtResultado.Location = new System.Drawing.Point(6, 86);
+            this.txtResultado.Multiline = true;
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.Size = new System.Drawing.Size(155, 100);
+            this.txtResultado.TabIndex = 2;
+            // 
+            // btnCorrerCarrera
+            // 
+            this.btnCorrerCarrera.Location = new System.Drawing.Point(169, 18);
+            this.btnCorrerCarrera.Name = "btnCorrerCarrera";
+            this.btnCorrerCarrera.Size = new System.Drawing.Size(125, 47);
+            this.btnCorrerCarrera.TabIndex = 1;
+            this.btnCorrerCarrera.Text = "Correr Carrera";
+            this.btnCorrerCarrera.UseVisualStyleBackColor = true;
+            this.btnCorrerCarrera.Click += new System.EventHandler(this.btnCorrerCarrera_Click);
+            // 
+            // cmbTipoCarrera
+            // 
+            this.cmbTipoCarrera.FormattingEnabled = true;
+            this.cmbTipoCarrera.Location = new System.Drawing.Point(6, 44);
+            this.cmbTipoCarrera.Name = "cmbTipoCarrera";
+            this.cmbTipoCarrera.Size = new System.Drawing.Size(155, 21);
+            this.cmbTipoCarrera.TabIndex = 0;
+            // 
+            // gpbListaAutos
+            // 
+            this.gpbListaAutos.Controls.Add(this.lsbListadoAutos);
+            this.gpbListaAutos.Location = new System.Drawing.Point(318, 100);
+            this.gpbListaAutos.Name = "gpbListaAutos";
+            this.gpbListaAutos.Size = new System.Drawing.Size(289, 359);
+            this.gpbListaAutos.TabIndex = 4;
+            this.gpbListaAutos.TabStop = false;
+            this.gpbListaAutos.Text = "Lista de Autos";
+            // 
+            // lsbListadoAutos
+            // 
+            this.lsbListadoAutos.FormattingEnabled = true;
+            this.lsbListadoAutos.Location = new System.Drawing.Point(6, 21);
+            this.lsbListadoAutos.Name = "lsbListadoAutos";
+            this.lsbListadoAutos.Size = new System.Drawing.Size(275, 316);
+            this.lsbListadoAutos.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,8 +295,8 @@
             this.gpbAutos.PerformLayout();
             this.gpbResultado.ResumeLayout(false);
             this.gpbResultado.PerformLayout();
-            this.gpbListaAutos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmrCantidadCarrera)).EndInit();
+            this.gpbListaAutos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

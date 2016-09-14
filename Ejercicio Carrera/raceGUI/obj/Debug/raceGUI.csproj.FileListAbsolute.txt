@@ -1,0 +1,11 @@
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\bin\Debug\ejercicio2UI.exe.config
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\obj\Debug\ejercicio2UI.exe
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\obj\Debug\ejercicio2UI.pdb
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\bin\Debug\ejercicio2UI.exe
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\bin\Debug\ejercicio2UI.pdb
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\bin\Debug\ejercicio1.exe
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\bin\Debug\ejercicio1.pdb
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\obj\Debug\raceGUI.csprojResolveAssemblyReference.cache
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\obj\Debug\ejercicio2UI.Form1.resources
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\obj\Debug\ejercicio2UI.Properties.Resources.resources
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Ejercicio Carrera\raceGUI\obj\Debug\raceGUI.csproj.GenerateResource.Cache
