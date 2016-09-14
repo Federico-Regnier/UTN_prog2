@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ejercicio1;
+using race;
 
 
 namespace ejercicio2UI

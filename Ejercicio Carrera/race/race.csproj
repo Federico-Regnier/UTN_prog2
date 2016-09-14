@@ -7,7 +7,7 @@
     <ProjectGuid>{4170045C-706D-43C6-A2BE-556A13012CC4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ejercicio1</RootNamespace>
+    <RootNamespace>race</RootNamespace>
     <AssemblyName>ejercicio1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

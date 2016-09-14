@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercicio1", "ejercicio1\ejercicio1.csproj", "{4170045C-706D-43C6-A2BE-556A13012CC4}"
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "race", "race\race.csproj", "{4170045C-706D-43C6-A2BE-556A13012CC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercicio1GUI", "ejercicio2UI\ejercicio1GUI.csproj", "{A2A92553-2992-476D-AA98-295C7A87B629}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raceGUI", "raceGUI\raceGUI.csproj", "{A2A92553-2992-476D-AA98-295C7A87B629}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
