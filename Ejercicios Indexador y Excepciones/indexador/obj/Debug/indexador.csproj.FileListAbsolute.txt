@@ -1,0 +1,6 @@
+D:\aurtenechea.ignacio\Csharp\indexador\indexador\bin\Debug\indexador.exe.config
+D:\aurtenechea.ignacio\Csharp\indexador\indexador\obj\Debug\indexador.csprojResolveAssemblyReference.cache
+D:\aurtenechea.ignacio\Csharp\indexador\indexador\bin\Debug\indexador.exe
+D:\aurtenechea.ignacio\Csharp\indexador\indexador\bin\Debug\indexador.pdb
+D:\aurtenechea.ignacio\Csharp\indexador\indexador\obj\Debug\indexador.exe
+D:\aurtenechea.ignacio\Csharp\indexador\indexador\obj\Debug\indexador.pdb

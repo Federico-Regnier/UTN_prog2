@@ -1,0 +1,11 @@
+D:\aurtenechea.ignacio\Csharp\indexador\exepcion\bin\Debug\exepcion.exe.config
+D:\aurtenechea.ignacio\Csharp\indexador\exepcion\bin\Debug\exepcion.exe
+D:\aurtenechea.ignacio\Csharp\indexador\exepcion\bin\Debug\exepcion.pdb
+D:\aurtenechea.ignacio\Csharp\indexador\exepcion\obj\Debug\exepcion.exe
+D:\aurtenechea.ignacio\Csharp\indexador\exepcion\obj\Debug\exepcion.pdb
+D:\FR\Prog2\Csharp-master\indexador\exepcion\bin\Debug\exepcion.exe.config
+D:\FR\Prog2\Csharp-master\indexador\exepcion\obj\Debug\exepcion.exe
+D:\FR\Prog2\Csharp-master\indexador\exepcion\obj\Debug\exepcion.pdb
+D:\FR\Prog2\Csharp-master\indexador\exepcion\bin\Debug\exepcion.exe
+D:\FR\Prog2\Csharp-master\indexador\exepcion\bin\Debug\exepcion.pdb
+D:\FR\Prog2\Csharp-master\indexador\exepcion\obj\Debug\exepcion.csprojResolveAssemblyReference.cache

@@ -4,3 +4,6 @@ c:\users\alumno\documents\visual studio 2012\Projects\Ejercicios\Ejercicio1\bin\
 c:\users\alumno\documents\visual studio 2012\Projects\Ejercicios\Ejercicio1\obj\Debug\Ejercicio1.csprojResolveAssemblyReference.cache
 c:\users\alumno\documents\visual studio 2012\Projects\Ejercicios\Ejercicio1\obj\Debug\Ejercicio1.exe
 c:\users\alumno\documents\visual studio 2012\Projects\Ejercicios\Ejercicio1\obj\Debug\Ejercicio1.pdb
+D:\FR\Prog2\EjercicioAbstraccion\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+D:\FR\Prog2\EjercicioAbstraccion\Ejercicio1\obj\Debug\Ejercicio1.exe
+D:\FR\Prog2\EjercicioAbstraccion\Ejercicio1\obj\Debug\Ejercicio1.pdb
