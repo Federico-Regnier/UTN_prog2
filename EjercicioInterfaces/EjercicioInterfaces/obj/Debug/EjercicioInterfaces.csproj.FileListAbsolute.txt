@@ -1,0 +1,6 @@
+D:\FR\EjercicioInterfaces\EjercicioInterfaces\bin\Debug\EjercicioInterfaces.exe.config
+D:\FR\EjercicioInterfaces\EjercicioInterfaces\obj\Debug\EjercicioInterfaces.csprojResolveAssemblyReference.cache
+D:\FR\EjercicioInterfaces\EjercicioInterfaces\bin\Debug\EjercicioInterfaces.exe
+D:\FR\EjercicioInterfaces\EjercicioInterfaces\bin\Debug\EjercicioInterfaces.pdb
+D:\FR\EjercicioInterfaces\EjercicioInterfaces\obj\Debug\EjercicioInterfaces.exe
+D:\FR\EjercicioInterfaces\EjercicioInterfaces\obj\Debug\EjercicioInterfaces.pdb

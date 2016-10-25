@@ -1,0 +1,15 @@
+D:\FR\Prog2\Archivos\Archivos\obj\Debug\Generics.csprojResolveAssemblyReference.cache
+D:\FR\Prog2\Archivos\Archivos\bin\Debug\Archivos.exe.config
+D:\FR\Prog2\Archivos\Archivos\bin\Debug\Archivos.exe
+D:\FR\Prog2\Archivos\Archivos\bin\Debug\Archivos.pdb
+D:\FR\Prog2\Archivos\Archivos\obj\Debug\Archivos.exe
+D:\FR\Prog2\Archivos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Archivos\Archivos\obj\Debug\Archivos.pdb
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Bartok\Documents\workspace_utn\Prog 2\UTN_prog2\Archivos\Archivos\obj\Debug\Generics.csprojResolveAssemblyReference.cache
+D:\FR\Prog2\Generics\Archivos\bin\Debug\Archivos.exe.config
+D:\FR\Prog2\Generics\Archivos\obj\Debug\Archivos.exe
+D:\FR\Prog2\Generics\Archivos\obj\Debug\Archivos.pdb
