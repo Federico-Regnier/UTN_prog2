@@ -31,6 +31,11 @@ namespace Archivos
             depositoMascotas.Agregar(new Mascota("aaa", "lab"));
             depositoMascotas.Agregar(new Mascota("bbb", "asd"));
             depositoMascotas.Agregar(new Mascota("ccc", "lab"));
+            
+            foreach (Mascota item in depositoMascotas)
+            {
+                Console.WriteLine(item.nombre);
+            }
 
             Console.ReadLine();
         }
