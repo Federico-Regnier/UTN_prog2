@@ -1,0 +1,5 @@
+D:\FR\Prog2\Serializacion\Serializacion\bin\Debug\Serializacion.exe
+D:\FR\Prog2\Serializacion\Serializacion\bin\Debug\Serializacion.pdb
+D:\FR\Prog2\Serializacion\Serializacion\obj\Debug\Serializacion.csprojResolveAssemblyReference.cache
+D:\FR\Prog2\Serializacion\Serializacion\obj\Debug\Serializacion.exe
+D:\FR\Prog2\Serializacion\Serializacion\obj\Debug\Serializacion.pdb
