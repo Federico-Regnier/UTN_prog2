@@ -1,0 +1,37 @@
+/* Select Simple */
+Select id, apellido 
+	from Persona 
+	where id > 100;
+
+/* Insert  */
+Insert into Persona 
+(nombre, apellido, sexo)
+values
+('Juan', 'Lopez', 'masculino'), ('Carlos', 'Fernandez', 'masculino'), 
+('AA', 'BBB', 'masculino'), ('Ezequiel', 'Martinez', 'masculino'); 
+
+Insert into Persona 
+(nombre, apellido, sexo)
+values
+('Juana', 'Lopez', 'femenino'), ('Carla', 'Fernandez', 'femenino'), 
+('Ana', 'BBB', 'femenino'), ('Martina', 'Martinez', 'femenino'); 
+
+Insert into Localidad
+(detalle)
+values
+('Lanus'), ('Caballito'), ('Avellaneda');
+
+
+/* Update */
+Update Persona
+Set sexo = 'varon';
+
+/* Update con condicion */
+update Persona
+set sexo = 'Mujer'
+where sexo = 'femenino'
+
+/* Delete, sin el where borra toda la tabla */
+Delete
+From Persona
+where nombre = 'Jose';
